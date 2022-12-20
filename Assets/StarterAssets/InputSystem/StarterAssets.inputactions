@@ -47,16 +47,7 @@
                     "id": "cf3b3be8-31be-408c-9837-99090e3b7c41",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "SpawnZombie",
-                    "type": "Button",
-                    "id": "5027ad16-ab74-47e7-acc8-a8f668f21817",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
+                    "interactions": "Press(behavior=2)",
                     "initialStateCheck": false
                 },
                 {
@@ -259,23 +250,60 @@
                 },
                 {
                     "name": "",
-                    "id": "ecadc471-357a-42db-b815-769fb78097e6",
-                    "path": "<Keyboard>/e",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "SpawnZombie",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "80dfd587-4625-4457-8f35-6c52d1dbc81a",
                     "path": "<Mouse>/rightButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Throw",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "GameInputs",
+            "id": "733a8fd0-1876-4749-8575-5fb55a213304",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "049f9ddc-cd71-4e9c-8043-040c49987aed",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SpawnZombie",
+                    "type": "Button",
+                    "id": "28758647-5447-4fd9-abc0-d95bbfd076b9",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "fa5a5bc8-1563-461d-a42a-acf1f589b0a7",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0c8b678a-eb64-4d7e-99d2-d345a7c95456",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SpawnZombie",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

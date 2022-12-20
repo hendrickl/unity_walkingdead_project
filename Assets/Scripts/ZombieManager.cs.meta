@@ -3,7 +3,10 @@ guid: f6bbd283cc3514d4c83279320a26c8c2
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - _destination: {instanceID: 0}
+  - _ragdollPrefab: {fileID: 4102206700290443199, guid: 20d5545d9bb12c947ad16518e492881a,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
