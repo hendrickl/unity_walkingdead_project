@@ -62,7 +62,7 @@ public class ZombieManager : MonoBehaviour
         {
             Debug.Log("Collision avec : " + collision.gameObject.name);
             Instantiate(_ragdollPrefab, transform.position, transform.rotation);
-            Destroy(gameObject);
+            Destroy(this);
         }
     }
 }

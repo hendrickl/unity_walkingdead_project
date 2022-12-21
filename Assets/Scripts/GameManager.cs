@@ -18,17 +18,12 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         _actionRefSpawnZombies.action.Enable();
-        _actionRefSpawnZombies.action.performed += OnSpawnZombie;
+        _actionRefSpawnZombies.action.performed += OnSpawnZombies;
 
         _input = GetComponent<StarterAssetsInputs>();
         _playerInput = GetComponent<PlayerInput>();
 
         // InstantiateXobjectsRandomly();
-    }
-
-    private void OnSpawnZombie(InputAction.CallbackContext obj)
-    {
-        InstantiateObjectAtSpawnPoint();
     }
 
     public void InstantiateObject()
@@ -62,16 +57,21 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // void InstantiateXObjectsAtSpawnPoint()
-    // {
-    // for (int i = 0; i < _nombredeZombies; i++)
-    // {
-    // InstantiateObjectAtSpawnpoint();
-    // }
-    // }
+    void InstantiateXObjectsAtSpawnPoint()
+    {
+        for (int i = 0; i < _nombreDeZombies; i++)
+        {
+            InstantiateObjectAtSpawnPoint();
+        }
+    }
 
     // Instantiate zombies with button pressed
-    private void OnSpawnZombies()
+    private void OnSpawnZombies(InputAction.CallbackContext obj)
+    {
+        InstantiateXObjectsAtSpawnPoint();
+    }
+
+    private void OnSpawnZombie()
     {
         InstantiateObjectAtSpawnPoint();
     }
