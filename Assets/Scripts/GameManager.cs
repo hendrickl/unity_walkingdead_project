@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject _prefab;
     [SerializeField] private Transform _spawnPoint;
     [SerializeField] private List<Transform> _spawnPoints;
-    [SerializeField] private int _nombreDeZombies;
+    [SerializeField] private int _numberOfZombies;
 
     // Start is called before the first frame update
     void Start()
@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour
 
     public void InstantiateXobjectsRandomly()
     {
-        for (int i = 0; i < _nombreDeZombies; i++)
+        for (int i = 0; i < _numberOfZombies; i++)
         {
             int a;
             int b;
@@ -59,7 +59,7 @@ public class GameManager : MonoBehaviour
 
     void InstantiateXObjectsAtSpawnPoint()
     {
-        for (int i = 0; i < _nombreDeZombies; i++)
+        for (int i = 0; i < _numberOfZombies; i++)
         {
             InstantiateObjectAtSpawnPoint();
         }
@@ -78,7 +78,7 @@ public class GameManager : MonoBehaviour
 
     public void InstantiateXObjtsAtRandomSpawnPoint()
     {
-        for (int i = 0; i < _nombreDeZombies; i++)
+        for (int i = 0; i < _numberOfZombies; i++)
         {
             int randomNumber;
             randomNumber = Random.Range(0, _spawnPoints.Count);
